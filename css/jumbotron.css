@@ -4,6 +4,7 @@ body {
 
 .dashboard-block {
     height: auto;
+    width: auto;
     overflow: hidden;
     text-align: center;
     float: left;

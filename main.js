@@ -22,7 +22,7 @@ app.on('window-all-closed', function() {
 // 这个方法就被调用
 app.on('ready', function() {
     // 创建浏览器窗口。
-    mainWindow = new BrowserWindow({width: 800, height: 600});
+    mainWindow = new BrowserWindow({width: 1000, height: 600});
 
     // 加载应用的 index.html
     mainWindow.loadURL('file://' + __dirname + '/dashboard.html');
@@ -61,7 +61,7 @@ ipcMain.on('rendDataToChart1Async', function(event, arg) {
 ipcMain.on('SwitchToMainPage', function(event, arg) {
     currentPage = arg;
     console.log("*************************\nMain Proccess: receive SwitchToMainPage apply - ");
-    mainWindow.loadURL('file://' + __dirname + '/animation.html');
+    mainWindow.loadURL('file://' + __dirname + '/mainpage.html');
     event.sender.send('SwitchToMainPage-reply', 'success');
     console.log("Main Proccess: SwitchToMainPage success");
 
