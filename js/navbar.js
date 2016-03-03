@@ -17,7 +17,7 @@ $(function(){
             ipcRenderer.send('SwitchToDashboardPage', 'SwitchToDashboardPage');
             ipcRenderer.on('SwitchToDashboardPage-reply', function(event, arg) {
                 console.log("navbar.js: SwitchToDashboardPage-reply");//对应render进程已回收，不能打到console
-                alert("dashboard");
+                //alert("dashboard");
             });
         }
     });
@@ -27,18 +27,18 @@ $(function(){
             ipcRenderer.send('SwitchToMainPage', 'SwitchToMainPage');
             ipcRenderer.on('SwitchToMainPage-reply', function (event, arg) {
                 console.log("navbar.js: SwitchToMainPage-reply");//对应render进程已回收，不能打到console
-                alert("main");
+                //alert("main");
             });
         }
     });
     $('#addserver').click(function(){
         //弹框
 
-        var win = new BrowserWindow({ width: 400, height: 450 });
+        var win = new BrowserWindow({ width: 400, height: 450, resizable:false, autoHideMenuBar: true });
         win.loadURL('file://' + __dirname + '/addserver.html');
     });
     $('#upload').click(function(){
-        var win = new BrowserWindow({ width: 300, height: 800 });
+        var win = new BrowserWindow({ width: 700, height: 500 });
         win.loadURL('https://www.baidu.com');
         //弹框
     });
