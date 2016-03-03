@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="THe dashboard for Operation And Maintenance Of Automation Tool">
+    <meta name="author" content="dsxing">
+    <link href="./bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/jumbotron.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+
+    <!--<script>window.$ = window.jQuery = require('./jquery/jquery-1.12.0.min.js');</script>
+
+    <script>require('./Highcharts-4.2.3/js/highcharts.js');</script>
+    <script>require('./Highcharts-4.2.3/js/modules/exporting.js');</script>
+    <script>require('./Highcharts-4.2.3/js/highcharts-more.js');</script>
+    <script>require('./bootstrap-3.3.6-dist/js/bootstrap.min.js');</script>
+    <script>require('./js/dashboard.js');</script>
+
+    <script type="text/javascript" src="./jquery/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="./Highcharts-4.2.3/js/highcharts.js"></script>
+    <script type="text/javascript" src="./Highcharts-4.2.3/js/modules/exporting.js"></script>
+    <script type="text/javascript" src="./Highcharts-4.2.3/js/highcharts-more.js"></script>
+    <script type="text/javascript" src="./bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+    <script type="text/javascript" src="./js/dashboard.js"></script>-->
+    <script type="text/javascript" src="./jquery/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="./Highcharts-4.1.5/js/highcharts.js"></script>
+    <script type="text/javascript" src="./Highcharts-4.1.5/js/modules/exporting.js"></script>
+    <script type="text/javascript" src="./Highcharts-4.1.5/js/highcharts-more.js"></script>
+    <script type="text/javascript" src="./Highcharts-4.1.5/js/highcharts-3d.js"></script>
+    <script type="text/javascript" src="./bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="./js/dashboard.js"></script>
+
+</head>
+<body class="style_body">
+
+    <div class="container-fluid">
+        <div class="row  style_row">
+            <div class="col-md-6 dashboard-block" style="min-width:45%">
+                <h4 class="dashboard-block-title"><b>软件运维状态：</b></h4>
+                <div class="dashboard-block-content style_col_left" id="container1" ></div>
+            </div>
+            <div class="col-md-6 dashboard-block" style="min-width:45%">
+                <h4 class="dashboard-block-title"><b>服务器运行状态：</b></h4>
+                <div class="dashboard-block-content style_col_right" id="container2" ></div>
+            </div>
+        </div>
+        <div class="row style_row">
+            <div class="col-md-6 dashboard-block" style="min-width:45%">
+                <h4 class="dashboard-block-title"><b>Master CPU使用率：</b></h4>
+                <div class="dashboard-block-content style_col_left" id="container3" ></div>
+            </div>
+            <div class="col-md-6 dashboard-block" style="min-width:45%">
+                <h4 class="dashboard-block-title"><b>Master 内存使用率：</b></h4>
+                <div class="dashboard-block-content style_col_right" id="container4" ></div>
+            </div>
+        </div>
+        <div class="row style_row">
+            <div class="col-md-12 dashboard-block" style="min-width:90%">
+                <h4 class="dashboard-block-titles"><b>任务列表：</b></h4>
+                <div class="dashboard-block-content table_div" id="container5" ></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

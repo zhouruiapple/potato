@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="THe dashboard for Operation And Maintenance Of Automation Tool">
+    <meta name="author" content="dsxing">
+    <title>Dashboard[仪表盘]</title>
+    <link href="./bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/jumbotron.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+
+    <script>window.$ = window.jQuery = require('./jquery/jquery-2.2.1.min.js');</script>
+
+    <script>require('./Highcharts-4.1.5/js/highcharts.js');</script>
+    <script>require('./Highcharts-4.1.5/js/modules/exporting.js');</script>
+    <script>require('./Highcharts-4.1.5/js/highcharts-more.js');</script>
+    <script>require('./Highcharts-4.1.5/js/highcharts-3d.js');</script>
+    <script>require('./bootstrap-3.3.6-dist/js/bootstrap.min.js');</script>
+    <script type="text/javascript" src="./js/dashboard.js"></script>
+    <script type="text/javascript" src="./js/navbar.js"></script>
+</head>
+<body class="style_body">
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="blog-nav">
+                <a id="dashboard" class="blog-nav-item active" href="#"><b>Dashboard</b></a>
+                <a id="main" class="blog-nav-item" href="#"><b>主页</b></a>
+                <a id="addserver" class="blog-nav-item" href="#"><b>添加主机</b></a>
+                <a id="upload" class="blog-nav-item" href="#"><b>上传软件包</b></a>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid style_row">
+        <div class="row  style_row">
+            <div class="col-md-6 dashboard-block" style="min-width:45%">
+                <h4 class="dashboard-block-title"><b>软件运维状态：</b></h4>
+                <div class="dashboard-block-content style_col_left" id="container1" ></div>
+            </div>
+            <div class="col-md-6 dashboard-block" style="min-width:45%">
+                <h4 class="dashboard-block-title"><b>服务器运行状态：</b></h4>
+                <div class="dashboard-block-content style_col_right" id="container2" ></div>
+            </div>
+        </div>
+        <div class="row style_row">
+            <div class="col-md-6 dashboard-block" style="min-width:45%">
+                <h4 class="dashboard-block-title"><b>Master CPU使用率：</b></h4>
+                <div class="dashboard-block-content style_col_left" id="container3" ></div>
+            </div>
+            <div class="col-md-6 dashboard-block" style="min-width:45%">
+                <h4 class="dashboard-block-title"><b>Master 内存使用率：</b></h4>
+                <div class="dashboard-block-content style_col_right" id="container4" ></div>
+            </div>
+        </div>
+        <!--<div class="row style_row">
+            <div class="col-md-12 dashboard-block" style="min-width:90%">
+                <h4 class="dashboard-block-titles"><b>任务列表：</b></h4>
+                <div class="dashboard-block-content table_div" id="container5" ></div>
+            </div>
+        </div>-->
+    </div>
+
+    <div class="container-fluid">
+        <br/><hr>
+        <footer>
+            <p>&copy; Aostarit 2016 研发中心-云计算-东方搏起</p>
+        </footer>
+    </div>
+</body>
+</html>

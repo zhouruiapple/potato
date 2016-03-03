@@ -1,0 +1,45 @@
+.style_body {
+    background: #f2f2f2
+}
+.style_row {
+    margin-top: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.style_col_left {
+    background: #fff;
+
+    padding-left: 2px;
+    padding-right: 1px;
+}
+.style_col_right {
+    background: #fff;
+
+    padding-left: 1px;
+    padding-right: 2px;
+}
+.style_row_two {
+    margin: 0px 0px;
+}
+.style_row_two_left {
+    background: #111;
+    height: 240px;
+    margin-left: -15px;
+    margin-right: -15px;
+    background: #fff;
+}
+.style_row_two_right {
+    background: #fff;
+    height: 240px;
+    margin-right: -15px;
+    padding-left: 1px;
+    padding-right: 2px;
+    background: #fff;
+}
+.style_table {
+    width: 100%
+}
+.table_div {
+    width: 100%;
+    padding:32px 15px 0px 15px;
+}

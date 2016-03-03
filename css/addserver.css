@@ -1,0 +1,40 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #eee;
+}
+
+.form-addserver {
+    max-width: 350px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.form-addserver .form-addserver-heading,
+.form-addserver .checkbox {
+    margin-bottom: 10px;
+}
+.form-addserver .checkbox {
+    font-weight: normal;
+}
+.form-addserver .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-addserver .form-control:focus {
+    z-index: 2;
+}
+.form-addserver input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-addserver input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
