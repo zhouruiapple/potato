@@ -1,0 +1,5 @@
+{
+    "atom_server_ip" : "10.6.0.24",
+    "atom_server_port" : "80",
+    "atom_welcome_jsonrpc2" : "/test/default/call/jsonrpc2"
+}
